@@ -1,0 +1,43 @@
+﻿<link rel="stylesheet" type="text/css" href="/css/orderPage.css" />
+<div class="container">
+	<div class="header">
+		<div class="cell-log">Order index<div class="cell-divider"></div></div>
+		<div class="cell-log">Date<div class="cell-divider"></div></div>
+		<div class="cell-log">Total<div class="cell-divider"></div></div>
+		<div class="cell-log">Product list</div>
+	</div>
+	<div class="list">
+			@{
+				foreach (ShopCart cart in Model)
+				{
+					<div class="item">
+						<div class="cell index">@(cart.Id)</div>
+						<div class="cell date">@(cart.Date)</div>
+					<div class="cell sum">$@(MathF.Round(cart.CartTotal, 2))</div>
+						<div class="cell products">
+							@{
+								foreach (var item in cart.items)
+								{
+									<div class="product-order-cell">
+										<div class="product-order-container">
+											<div class="product-order-image">
+												<img src="@(item.Img)" alt="Product Image" />
+											</div>
+											<div class="product-order-info">
+												<div class="product-order-name">@(item.Name)</div>
+												<div class="product-order-details">
+													<div class="product-order-quantity">@(item.Quantity)</div>
+													<div class="product-order-divider"></div>
+													<div class="product-order-price">$@(MathF.Round(item.Price, 2))</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								}
+							}
+						</div>
+					</div>
+				}
+			}
+	</div>
+</div>

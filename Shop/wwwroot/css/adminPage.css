@@ -1,0 +1,70 @@
+﻿.container {
+    position: relative;
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.list {
+    overflow-y: scroll;
+    height: 600px;
+    border: 1px solid #000000;
+}
+
+.item-customer {
+    display: grid;
+    grid-template-columns: 50% 20% 30%;
+    align-items: center;
+    border: 1px solid #ccc;
+    min-height: 200px;
+    padding: 10px;
+}
+
+.customer-info {
+    border: 1px solid #ddd;
+    height: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+.customer-info:first-child{
+    margin-left: unset;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 50% 20% 30%;
+    align-items: center;
+    border-bottom: 2px solid #ccc;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.cell-log {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.cell-divider {
+    border-right: 1px solid #ddd;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 80%;
+    transform: translateY(-50%);
+}
+
+.cell.date{
+    display: flex;
+    align-self: start;
+    justify-content: center;
+    word-wrap: break-word
+}

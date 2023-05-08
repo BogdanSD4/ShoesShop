@@ -1,0 +1,67 @@
+﻿@{
+    float productSum = 0;
+    bool cartIsEmpty = true;
+}
+
+<div class="shop-cart-list">
+    @{
+        string path = $"D:\\Fork\\ShoesShop\\Shop\\TempData\\{Model.UserId}.dat";
+        ShopCart cart = new ShopCart();
+
+        if (System.IO.File.Exists(path))
+        {
+            dynamic file = JsonConvert.DeserializeObject(System.IO.File.ReadAllText(path));
+            cart = JsonConvert.DeserializeObject<ShopCart>(file["ShopCart"].ToString());
+        }
+
+        if (cart.items.Count > 0) cartIsEmpty = false;
+
+        foreach (var item in cart.items)
+        {
+            <div class="cart-item">
+                <div class="item-info">
+                    <span class="item-name">Name: @(item.Name)</span>
+                    <span class="item-price">Price: @(MathF.Round(item.Price*item.Quantity, 2))</span>
+                    <span class="item-quantity">Quantity: @(item.Quantity)</span>
+                </div>
+                @{
+                    string data = JsonConvert.SerializeObject(item);
+                    <button class="remove-item" onclick="removeOutCart(@data)">Remove</button>
+                }
+            </div>
+            productSum += item.Price*item.Quantity;
+        }
+    }
+</div>
+@{
+    if (cartIsEmpty)
+    {
+        <div>
+            <h4>Empty</h4>
+        </div>
+    }
+    else
+    {
+        <div class="cart-total">
+            <p>Total: $@(MathF.Round(productSum, 2))</p>
+        </div>
+        <div class="cart-actions">
+            <button class="btn btn-primary" onclick="window.location.href='../Order/OrderForm'">Order</button>
+        </div>
+    }
+}
+<script>
+
+    function removeOutCart(product) {
+
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "../Product/RemoveProduct", true);
+        xhr.setRequestHeader('Content-type', 'application/json; charset=utf-8');
+        xhr.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                $('#replace-items').load('../Product/GetShopCart');
+            }
+        };
+        xhr.send(JSON.stringify(product));
+    }
+</script>

@@ -1,0 +1,34 @@
+﻿<link rel="stylesheet" type="text/css" href="/css/adminPage.css" />
+<div class="container">
+	<div class="header">
+		<div class="cell-log">Admin<div class="cell-divider"></div></div>
+		<div class="cell-log">Registration Date<div class="cell-divider"></div></div>
+		<div class="cell-log">Auth</div>
+	</div>
+	<div class="list">
+		@{
+			foreach (AdminPagesViewModel adminPage in Model)
+			{
+				<div class="item-customer">
+					<div class="customer-info">
+						<p><b>First name: </b>@(adminPage.customer.firstName)</p>
+						<p><b>Last name: </b>@(adminPage.customer.lastName)</p>
+						<p><b>Email: </b>@(adminPage.customer.email)</p>
+						<p><b>Phone: </b>@(adminPage.customer.phone)</p>
+						<p><b>Address: </b>@(adminPage.customer.adress)</p>
+					</div>
+					<div class="customer-info">
+						<div class="cell date">@(adminPage.auth.registrationTime)</div>
+					</div>
+					<div class="customer-info">
+						<p><b>Username: </b>@(adminPage.auth.username)</p>
+						<p><b>Password: </b>@(adminPage.auth.password)</p>
+					</div>
+				</div>
+			}
+		}
+		@{
+
+		}
+	</div>
+</div>

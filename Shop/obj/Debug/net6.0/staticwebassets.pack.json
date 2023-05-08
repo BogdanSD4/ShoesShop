@@ -1,0 +1,145 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Fork\\ShoesShop\\Shop\\wwwroot\\css\\ProductImage.css",
+      "PackagePath": "staticwebassets\\css\\ProductImage.css"
+    },
+    {
+      "Id": "D:\\Fork\\ShoesShop\\Shop\\wwwroot\\css\\_layout.css",
+      "PackagePath": "staticwebassets\\css\\_layout.css"
+    },
+    {
+      "Id": "D:\\Fork\\ShoesShop\\Shop\\wwwroot\\css\\adminOrderPage.css",
+      "PackagePath": "staticwebassets\\css\\adminOrderPage.css"
+    },
+    {
+      "Id": "D:\\Fork\\ShoesShop\\Shop\\wwwroot\\css\\adminPage.css",
+      "PackagePath": "staticwebassets\\css\\adminPage.css"
+    },
+    {
+      "Id": "D:\\Fork\\ShoesShop\\Shop\\wwwroot\\css\\headerStyle.css",
+      "PackagePath": "staticwebassets\\css\\headerStyle.css"
+    },
+    {
+      "Id": "D:\\Fork\\ShoesShop\\Shop\\wwwroot\\css\\loginSignin.css",
+      "PackagePath": "staticwebassets\\css\\loginSignin.css"
+    },
+    {
+      "Id": "D:\\Fork\\ShoesShop\\Shop\\wwwroot\\css\\orderPage.css",
+      "PackagePath": "staticwebassets\\css\\orderPage.css"
+    },
+    {
+      "Id": "D:\\Fork\\ShoesShop\\Shop\\wwwroot\\css\\orderform.css",
+      "PackagePath": "staticwebassets\\css\\orderform.css"
+    },
+    {
+      "Id": "D:\\Fork\\ShoesShop\\Shop\\wwwroot\\css\\productListStyle.css",
+      "PackagePath": "staticwebassets\\css\\productListStyle.css"
+    },
+    {
+      "Id": "D:\\Fork\\ShoesShop\\Shop\\wwwroot\\css\\shopCartStyle.css",
+      "PackagePath": "staticwebassets\\css\\shopCartStyle.css"
+    },
+    {
+      "Id": "D:\\Fork\\ShoesShop\\Shop\\wwwroot\\css\\workspace.css",
+      "PackagePath": "staticwebassets\\css\\workspace.css"
+    },
+    {
+      "Id": "D:\\Fork\\ShoesShop\\Shop\\wwwroot\\img\\AdidasUltraboost21.jpg",
+      "PackagePath": "staticwebassets\\img\\AdidasUltraboost21.jpg"
+    },
+    {
+      "Id": "D:\\Fork\\ShoesShop\\Shop\\wwwroot\\img\\Converse Chuck Taylor All Star.jpg",
+      "PackagePath": "staticwebassets\\img\\Converse Chuck Taylor All Star.jpg"
+    },
+    {
+      "Id": "D:\\Fork\\ShoesShop\\Shop\\wwwroot\\img\\New Balance Fresh Foam 1080v11.jpg",
+      "PackagePath": "staticwebassets\\img\\New Balance Fresh Foam 1080v11.jpg"
+    },
+    {
+      "Id": "D:\\Fork\\ShoesShop\\Shop\\wwwroot\\img\\Nike Air Max 270 React.jpg",
+      "PackagePath": "staticwebassets\\img\\Nike Air Max 270 React.jpg"
+    },
+    {
+      "Id": "D:\\Fork\\ShoesShop\\Shop\\wwwroot\\img\\Puma RS-Fast Tech Sneakers.jpg",
+      "PackagePath": "staticwebassets\\img\\Puma RS-Fast Tech Sneakers.jpg"
+    },
+    {
+      "Id": "D:\\Fork\\ShoesShop\\Shop\\wwwroot\\img\\Skechers Summits Light Dreaming.jpg",
+      "PackagePath": "staticwebassets\\img\\Skechers Summits Light Dreaming.jpg"
+    },
+    {
+      "Id": "D:\\Fork\\ShoesShop\\Shop\\wwwroot\\img\\add-to-basket.png",
+      "PackagePath": "staticwebassets\\img\\add-to-basket.png"
+    },
+    {
+      "Id": "D:\\Fork\\ShoesShop\\Shop\\wwwroot\\img\\source_img\\admin.png",
+      "PackagePath": "staticwebassets\\img\\source_img\\admin.png"
+    },
+    {
+      "Id": "D:\\Fork\\ShoesShop\\Shop\\wwwroot\\img\\source_img\\left-arrow.png",
+      "PackagePath": "staticwebassets\\img\\source_img\\left-arrow.png"
+    },
+    {
+      "Id": "D:\\Fork\\ShoesShop\\Shop\\wwwroot\\img\\source_img\\man.png",
+      "PackagePath": "staticwebassets\\img\\source_img\\man.png"
+    },
+    {
+      "Id": "D:\\Fork\\ShoesShop\\Shop\\wwwroot\\img\\source_img\\right-arrow.png",
+      "PackagePath": "staticwebassets\\img\\source_img\\right-arrow.png"
+    },
+    {
+      "Id": "D:\\Fork\\ShoesShop\\Shop\\wwwroot\\img\\user.png",
+      "PackagePath": "staticwebassets\\img\\user.png"
+    },
+    {
+      "Id": "D:\\Fork\\ShoesShop\\Shop\\wwwroot\\js\\LoginChecker.js",
+      "PackagePath": "staticwebassets\\js\\LoginChecker.js"
+    },
+    {
+      "Id": "D:\\Fork\\ShoesShop\\Shop\\wwwroot\\js\\ProductImage.js",
+      "PackagePath": "staticwebassets\\js\\ProductImage.js"
+    },
+    {
+      "Id": "D:\\Fork\\ShoesShop\\Shop\\wwwroot\\js\\_layoyt.js",
+      "PackagePath": "staticwebassets\\js\\_layoyt.js"
+    },
+    {
+      "Id": "D:\\Fork\\ShoesShop\\Shop\\wwwroot\\js\\errors.js",
+      "PackagePath": "staticwebassets\\js\\errors.js"
+    },
+    {
+      "Id": "D:\\Fork\\ShoesShop\\Shop\\wwwroot\\js\\header.js",
+      "PackagePath": "staticwebassets\\js\\header.js"
+    },
+    {
+      "Id": "D:\\Fork\\ShoesShop\\Shop\\wwwroot\\js\\orderForm\\orderForm.js",
+      "PackagePath": "staticwebassets\\js\\orderForm\\orderForm.js"
+    },
+    {
+      "Id": "D:\\Fork\\ShoesShop\\Shop\\wwwroot\\js\\showPage.js",
+      "PackagePath": "staticwebassets\\js\\showPage.js"
+    },
+    {
+      "Id": "D:\\Fork\\ShoesShop\\Shop\\wwwroot\\js\\workspace.js",
+      "PackagePath": "staticwebassets\\js\\workspace.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Shop.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Shop.props",
+      "PackagePath": "build\\Shop.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Shop.props",
+      "PackagePath": "buildMultiTargeting\\Shop.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Shop.props",
+      "PackagePath": "buildTransitive\\Shop.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

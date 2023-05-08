@@ -1,0 +1,65 @@
+﻿
+<div class="container-fluid">
+    <div class="row align-items-center">
+        <div class="col-lg-2 col-6">
+            <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+        </div>
+        <div class="col-lg-7 col-0">
+            <ul class="nav justify-content-start">
+                @{
+                    CustomerViewModel customerView = Model.Customers;
+                    string type = customerView.Type;
+                    var categoryList = Enum.GetNames<CategoryType>();
+
+                    <li class="nav-item"><a href="../Product/ShowPage" class="nav-link px-2 link-secondary">Main</a></li>
+                    <li class="nav-item">
+                        @{
+                            <div class="dropdown">
+                                <lable class="nav-link px-2 link-dark text-primary dropbtn">
+                                    Category
+                                    <ul class="dropdown-menu dropdown-menu-end text-small dropdown-content" aria-labelledby="dropdownUser1">
+                                        @{
+                                            foreach (var item in categoryList)
+                                            {
+                                                <li><a class="dropdown-item" href="@Url.Action("ShowPage", "Product", new { category = item })">@item</a></li>
+                                            }
+                                        }
+                                    </ul>
+                                </lable>
+                            </div>
+                        }
+                    </li>
+
+                    switch (type)
+                    {
+                        case "user":
+                            <li class="nav-item"><a href="#" onclick="reloadContentOrderPage()" class="nav-link px-2 link-dark">Orders</a></li>
+                            break;
+                        case "admin":
+                            <li class="nav-item"><a href="#" onclick="reloadContentAdminOrderPage()" class="nav-link px-2 link-dark">Orders</a></li>
+                            <li class="nav-item"><a href="#" onclick="reloadContentAdminPage()" class="nav-link px-2 link-dark">Admins</a></li>
+                            break;
+                    }
+                }
+            </ul>
+        </div>
+        <div class="ms-auto order-last">
+            <div class="d-flex align-items-center">
+                <form class="d-inline-flex search">
+                    <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                </form>
+                <div class="dropdown">
+                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle dropbtn" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="/img/user.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end text-small dropdown-content" aria-labelledby="dropdownUser1">
+                        <li><a class="dropdown-item" href="../Login/Workspace">Change Account</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

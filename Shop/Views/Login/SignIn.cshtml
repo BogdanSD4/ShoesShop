@@ -1,0 +1,22 @@
+﻿@{
+    Layout = "_EmptyLayout";
+}
+
+
+<div class="login-form">
+    <h2>Sign in</h2>
+    <form>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        <br>
+        <label for="username">User name:</label>
+        <input type="text" id="username" name="username">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <br>
+        <button class="button" onclick="sendSignInData(event)">Enter</button>
+        <br>
+        <label class="link">You have account?<a href="/Login/Login">Log in</a></label>
+    </form>
+</div>

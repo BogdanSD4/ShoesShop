@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=SUKHOMLYN;Database=Shop;Trusted_Connection=True;MultipleActiveResultSets=true;trustServerCertificate=true"
+  }
+}
